@@ -5,14 +5,14 @@ on:
       - master
       - dev
 env:
-  MONGODB_DB_NAME: ${{ secrets.MONGODB_DB_NAME }}
+  MONGODB_DB_NAME: gh-demo-test
 
 jobs:
   test:
     env:
       MONGODB_USERNAME: johanny
       MONGODB_CLUSTER_ADDRESS: cluster0.woekjcf.mongodb.net
-      MONGODB_PASSWORD: :4A$9qktfeL9Ny/1pkjP
+      MONGODB_PASSWORD: johanny
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
